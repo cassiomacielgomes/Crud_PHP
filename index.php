@@ -59,7 +59,7 @@ if (!empty($_GET['del'])) {
                         <td><?= $item['nome']; ?></td>
                         <td><?= $item['email']; ?></td>
                         <td>
-                            <a href="editar.php" class="btn btn-primary">Editar</a>
+                            <a href="editar.php?id=<?= $item['id']; ?>" class="btn btn-primary">Editar</a>
                             <a href="index.php?del=<?= $item['id']; ?>" class="btn btn-danger" onclick="return confirm('Excluir?')">Excluir</a>
                         </td>
                     </tr>
